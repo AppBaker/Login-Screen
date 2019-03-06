@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E488D770222FCFF200CC4518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488D76F222FCFF200CC4518 /* AppDelegate.swift */; };
-		E488D772222FCFF200CC4518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488D771222FCFF200CC4518 /* ViewController.swift */; };
 		E488D775222FCFF200CC4518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E488D773222FCFF200CC4518 /* Main.storyboard */; };
 		E488D777222FCFF300CC4518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E488D776222FCFF300CC4518 /* Assets.xcassets */; };
 		E488D77A222FCFF300CC4518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E488D778222FCFF300CC4518 /* LaunchScreen.storyboard */; };
+		E488D785222FD2D900CC4518 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488D784222FD2D900CC4518 /* LoginViewController.swift */; };
+		E488D787222FD30900CC4518 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488D786222FD30900CC4518 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E488D76C222FCFF200CC4518 /* Login Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Login Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E488D76F222FCFF200CC4518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E488D771222FCFF200CC4518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E488D774222FCFF200CC4518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E488D776222FCFF300CC4518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E488D779222FCFF300CC4518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E488D77B222FCFF300CC4518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E488D784222FD2D900CC4518 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E488D786222FD30900CC4518 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		E488D76E222FCFF200CC4518 /* Login Screen */ = {
 			isa = PBXGroup;
 			children = (
-				E488D76F222FCFF200CC4518 /* AppDelegate.swift */,
-				E488D771222FCFF200CC4518 /* ViewController.swift */,
-				E488D773222FCFF200CC4518 /* Main.storyboard */,
-				E488D776222FCFF300CC4518 /* Assets.xcassets */,
-				E488D778222FCFF300CC4518 /* LaunchScreen.storyboard */,
+				E488D783222FD01E00CC4518 /* Suporting Files */,
+				E488D781222FCFFD00CC4518 /* Controller */,
+				E488D782222FD01300CC4518 /* View */,
 				E488D77B222FCFF300CC4518 /* Info.plist */,
 			);
 			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		E488D781222FCFFD00CC4518 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E488D784222FD2D900CC4518 /* LoginViewController.swift */,
+				E488D786222FD30900CC4518 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E488D782222FD01300CC4518 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E488D773222FCFF200CC4518 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E488D783222FD01E00CC4518 /* Suporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E488D76F222FCFF200CC4518 /* AppDelegate.swift */,
+				E488D776222FCFF300CC4518 /* Assets.xcassets */,
+				E488D778222FCFF300CC4518 /* LaunchScreen.storyboard */,
+			);
+			path = "Suporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E488D772222FCFF200CC4518 /* ViewController.swift in Sources */,
+				E488D787222FD30900CC4518 /* SecondViewController.swift in Sources */,
+				E488D785222FD2D900CC4518 /* LoginViewController.swift in Sources */,
 				E488D770222FCFF200CC4518 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MS39QS696;
 				INFOPLIST_FILE = "Login Screen/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MS39QS696;
 				INFOPLIST_FILE = "Login Screen/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
