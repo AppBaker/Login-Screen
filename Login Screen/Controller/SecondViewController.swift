@@ -22,8 +22,6 @@ class SecondViewController: UIViewController {
         if let name = userName {
             textLable.text = name
         }
-
-        // Do any additional setup after loading the view.
     }
 
 }
