@@ -70,7 +70,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         } else if button.tag == 1 {
             controller.userName = "Название популярного Российского автопроизводителя"
         } else if button.tag == 2 {
-            controller.userName = "Это цыфры один два три"
+            controller.userName = "Это цифры: один два три"
         }
         
     }
